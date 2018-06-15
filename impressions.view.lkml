@@ -1,5 +1,5 @@
 view: impressions {
-  sql_table_name: `inv_bq_poc.dfp_network_impressions`
+  sql_table_name: `inv_ibi_poc.dfp_network_impressions`
       ;;
 
   measure: count {
