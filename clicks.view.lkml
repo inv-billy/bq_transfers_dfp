@@ -1,5 +1,5 @@
 view: clicks {
-    sql_table_name: `ekoblov-test.dfp.click_8264` ;;
+    sql_table_name: `inv_bq_poc.dfp_network_clicks` ;;
 
 
   measure: count {
