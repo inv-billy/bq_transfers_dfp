@@ -1,4 +1,4 @@
-connection: "doubleclick"
+connection: "google_bq"
 
 # include all the views
 include: "*.view"
