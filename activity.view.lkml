@@ -1,5 +1,5 @@
 view: activity {
-  sql_table_name: `inv_ibi_poc.dfp_network_activities`
+  sql_table_name: `inv_ibi_poc.dfp_network_activities_*`
       ;;
 
 

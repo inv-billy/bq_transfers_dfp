@@ -1,5 +1,5 @@
 view: match_table_ad_unit {
-  sql_table_name:`ekoblov-test.dfp.MatchTableAdUnit_8264` ;;
+  sql_table_name:`inv_ibi_poc.dfp_ad_units` ;;
 
   dimension: id {
     primary_key: yes
@@ -276,7 +276,7 @@ view: match_table_user {
 
 
 view: match_table_line_items {
-  sql_table_name: `ekoblov-test.dfp.line_item_8264` ;;
+  sql_table_name: `inv_ibi_poc.dfp_line_items` ;;
   ## table syntax should be dataset.matchtablelineitem
 
   measure: count {

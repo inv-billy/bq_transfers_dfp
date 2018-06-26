@@ -43,7 +43,7 @@ view: impression_funnel {
                 , min(time) as first_click
                 , max(time) as latest_click
                 , count(*) as count_clicks
-            from `ekoblov-test.dfp.click_8264`  --may need to swap table name with `NetworkClicks` depending on your naming convention
+            from `inv_ibi_poc.dfp_network_clicks`  --may need to swap table name with `NetworkClicks` depending on your naming convention
             -- where userid <> '' and userid is not null
             group by 1,2,3,4,5,6,7,8) as user_click_metrics
 
@@ -71,7 +71,7 @@ view: impression_funnel {
                 , max(time) as latest_activity
                 , sum(CAST(quantity as FLOAT64)) as activities
                 , sum(CAST(revenue as FLOAT64)) as revenue
-                from `ekoblov-test.dfp.activity_8264`  --may need to swap table name with `NetworkActivities` depending on your naming convention
+                from `inv_ibi_poc.dfp_network_activities`  --may need to swap table name with `NetworkActivities` depending on your naming convention
                 -- where UserID <> '' and UserID is not null
                 group by 1,2,3,4,5,6,7,8) as user_activity_metrics
             on user_impression_metrics.userid = user_activity_metrics.userid
